@@ -1,0 +1,69 @@
+<ion-header style="background-color: black">
+  <ion-navbar style="height:50px">
+    <ion-buttons left>
+      <button ion-button>
+        <img src="../../assets/imgs/logomix.PNG" style="width: 40px"/>
+      </button>
+    </ion-buttons>
+    <ion-title>
+      มิกซ์ เบเกอรี่
+    </ion-title>
+    <ion-buttons right>
+        <button ion-button (click)="goHistory()">
+          <img src="../../assets/imgs/hamburger.PNG" style="width: 30px"/>
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding style="background-color: lightgrey">
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6>
+        <div class="item-header">Chocolate cake</div>
+        <div><img src="../../assets/imgs/chocolate_cake.jpg"/></div>
+        <div class="item-footer">฿ 50</div>
+      </ion-col>
+      <ion-col col-6>
+          <div class="item-header">Panna cotta</div>
+          <div><img src="../../assets/imgs/panna_cotta.jpg"/></div>
+          <div class="item-footer">฿ 50</div>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col col-6>
+          <div class="item-header">Cheesecake</div>
+          <div><img src="../../assets/imgs/cheese_cake.jpg"/></div>
+          <div class="item-footer">฿ 50</div>
+        </ion-col>
+        <ion-col col-6>
+            <div class="item-header">Crepe cake</div>
+            <div><img src="../../assets/imgs/crepe_cake.jpg"/></div>
+            <div class="item-footer">฿ 50</div>
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col col-6>
+            <div class="item-header">Hot coffee</div>
+            <div><img src="../../assets/imgs/hot_coffee.jpg"/></div>
+            <div class="item-footer">฿ 50</div>
+          </ion-col>
+          <ion-col col-6>
+              <div class="item-header">Ice coffee</div>
+              <div><img src="../../assets/imgs/ice_coffee.jpg"/></div>
+              <div class="item-footer">฿ 50</div>
+            </ion-col>
+        </ion-row>
+  </ion-grid>
+
+  <ion-grid class="page-footer">
+    <ion-row>
+      <ion-col class="page-order">2 รายการ</ion-col>
+      <ion-col class="page-cost">฿100</ion-col>
+      <ion-col>
+        <button class="btn-order" (click)="goPayment()">สั่งซื้อ</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+</ion-content>
